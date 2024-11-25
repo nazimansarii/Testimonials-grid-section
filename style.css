@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    margin: 1rem;
+    display: grid;
+}
+
+.card{
+    box-shadow: 0 0 10px #ccc;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card-1{
+    background-color: hsl(263, 55%, 52%);
+}
+
+.card-2{
+    background-color:hsl(217, 19%, 35%);
+}
+
+.card-3{
+    background-color:hsl(0, 0%, 100%);
+}
+
+.card-4{
+    background-color:hsl(219, 29%, 14%);
+}
+
+.card-5{
+    background-color: hsl(0, 0%, 100%);
+}
+
+img{
+    border-radius: 100%;
+    border: 1px solid #fff;
+    float: left;
+    margin-left: 1rem;
+}
+.card-1 h5, .card-2 h5, .card-4 h5{
+    float: left;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    color: #fff;
+}
+
+.card-1 p{
+    font-size: 0.8rem;
+    float: left;
+    margin-left: -6.5rem;
+    margin-top: 1.8rem;
+    color: #ccc;
+}
+
+.card-1 .tags, .card-2 .tags, .card-4 .tags{
+    color: #fff;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.card-1 .tags p, .card-2 .tags p, .card-4 .tags p{
+    margin-left: 0.3rem;
+}
+
+.card-2 p{
+    font-size: 0.8rem;
+    float: left;
+    margin-left: -6.9rem;
+    margin-top: 1.8rem;
+    color: #ccc;
+}
+
+
+.card-3 h5, .card-5 h5{
+    float: left;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+    color: #323232;
+}
+
+.card-3 p{
+    font-size: 0.8rem;
+    float: left;
+    margin-left: -7rem;
+    margin-top: 1.8rem;
+    color: #ccc;
+}
+
+.card-3 .tags{
+    color: #323232;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.card-3 .tags p, .card-5 .tags p{
+    margin-left: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.card-4 p{
+    font-size: 0.8rem;
+    float: left;
+    margin-left: -6.4rem;
+    margin-top: 1.8rem;
+    color: #ccc;
+}
+
+
+.card-5 p{
+    font-size: 0.8rem;
+    float: left;
+    margin-left: -5.5rem;
+    margin-top: 1.8rem;
+    color: #ccc;
+}
+
+.card-5 .tags{
+    color: #323232;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (min-width:1000px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        gap: 1rem;
+    }
+
+    .card-1{
+        grid-column-start: span 2;
+    }
+    .card-5{
+        grid-column-start: 4;
+    }
+    .card-3{
+        grid-row-start: 2;
+    }
+    .card-4{
+        grid-row-start: 2;
+        grid-column-start: span 2;
+    }
+    .card-5{
+        grid-row-start: span 2;
+    }
+}
